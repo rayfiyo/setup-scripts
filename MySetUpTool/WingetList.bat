@@ -1,9 +1,29 @@
 chcp 65001
+echo off
 echo Microsoftストアにて "app installer" の更新を確認済みですか？
+echo (Have you checked the Microsoft Store for an updated "app installer"?)
 
-echo PowerShell 7
-winget install -e --id Microsoft.PowerShell
-echo .
+
+
+echo インストールするパッケージの一覧
+echo (List of packages to install.)
+
+echo DevToys
+echo draw.io
+echo FireFox
+echo ★Google日本語入力
+echo PowerToys
+echo VMware WorkstationPlayer
+
+echo Git
+
+echo Audacity
+echo ★Discord
+echo EarTrumpet
+echo Thunderbird
+echo VLC
+
+PAUSE
 
 
 
@@ -37,10 +57,6 @@ echo Git
 winget install -e --id Git.Git
 echo .
 
-echo Python3
-winget install -e --id Python.Python.3
-echo.
-
 
 
 echo Audacity
@@ -55,10 +71,6 @@ echo EarTrumpet
 winget install -e --id File-New-Project.EarTrumpet
 echo .
 
-echo LINE
-winget install -e --id LINE.LINE
-echo .
-
 echo Thunderbird
 winget install -e --id Mozilla.Thunderbird
 echo.
@@ -66,3 +78,9 @@ echo.
 echo VLC
 winget install -e --id VideoLAN.VLC
 echo.
+
+
+
+echo 以上で、 WingetList.bat の動作が完了しました。
+echo (WingetList.bat is done.)
+PAUSE
