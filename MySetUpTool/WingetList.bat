@@ -14,10 +14,10 @@ echo Arduino IDE
 echo DevToys
 echo draw.io
 echo FireFox
-echo ★Google日本語入力
 echo PowerToys
 echo Tor
 echo VMware WorkstationPlayer
+echo Windows Terminal
 
 echo Git
 echo Python 3.9
@@ -25,6 +25,7 @@ echo Python 3.9
 echo Audacity
 echo ★Discord
 echo EarTrumpet
+echo MSEdgeRedirect
 echo OBS
 echo Thunderbird
 echo VLC
@@ -49,10 +50,6 @@ echo FireFox
 winget install -e --id Mozilla.Firefox
 echo .
 
-echo ★Google日本語入力
-winget install -e --id Google.JapaneseIME
-echo .
-
 echo PowerToys
 winget install -e --id Microsoft.PowerToys
 echo .
@@ -63,6 +60,10 @@ echo .
 
 echo VMware WorkstationPlayer
 winget install -e --id VMware.WorkstationPlayer
+echo .
+
+echo Windows Terminal
+winget install -e --id Microsoft.WindowsTerminal
 echo .
 
 
@@ -87,6 +88,10 @@ echo .
 
 echo EarTrumpet
 winget install -e --id File-New-Project.EarTrumpet
+echo .
+
+echo MSEdgeRedirect
+winget install -e --id rcmaehl.MSEdgeRedirect
 echo .
 
 echo OBS
