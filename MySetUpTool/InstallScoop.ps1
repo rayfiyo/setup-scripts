@@ -6,12 +6,14 @@ echo off
 echo このプログラムの仕事
 echo (Execution list of this program.)
 
-echo scoopのインストール
-echo (Installing scoop.)
-echo extras Bucket の追加
-echo (Adding "extras Bucket".)
-echo versions Bucket の追加
-echo (Adding "versions Bucket".)
+echo scoopのインストール &
+echo (Installing scoop.) &
+echo gitのインストール &
+echo (Installing git(on scoop).) &
+echo extras Bucket の追加 &
+echo (Adding "extras Bucket".) &
+echo versions Bucket の追加 &
+echo (Adding "versions Bucket".) &
 
 PAUSE
 
@@ -20,6 +22,10 @@ PAUSE
 echo scoop
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 iwr -useb get.scoop.sh | iex
+echo .
+
+echo git
+scoop install git
 echo .
 
 echo extras Bucket

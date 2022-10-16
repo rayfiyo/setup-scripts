@@ -16,14 +16,16 @@ echo draw.io
 echo FireFox
 echo PowerToys
 echo Tor
+echo Ubuntu 22.04
 echo VMware WorkstationPlayer
 echo Windows Terminal
 
 echo Git
-echo Python 3.9
+echo Python 3.10
 
 echo Audacity
 echo ★Discord
+echo Dynalist
 echo EarTrumpet
 echo MSEdgeRedirect
 echo OBS
@@ -58,6 +60,10 @@ echo Tor
 winget install -e --id TorProject.TorBrowser
 echo .
 
+echo Ubuntu 22.04
+winget install -e --id Canonical.Ubuntu.2204
+echo .
+
 echo VMware WorkstationPlayer
 winget install -e --id VMware.WorkstationPlayer
 echo .
@@ -72,8 +78,8 @@ echo Git
 winget install -e --id Git.Git
 echo .
 
-echo Python 3.9
-winget install -e --id Python.Python.3.9
+echo Python 3.10
+winget install -e --id Python.Python.3.10
 echo .
 
 
@@ -84,6 +90,10 @@ echo .
 
 echo ★Discord
 winget install -e --id Discord.Discord
+echo .
+
+echo Dynalist
+winget install -e --id Dynalist.Dynalist
 echo .
 
 echo EarTrumpet
