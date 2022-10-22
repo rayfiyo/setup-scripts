@@ -1,36 +1,39 @@
 chcp 65001
 echo off
-echo Microsoftストアにて "app installer" の更新を確認済みですか？
-echo (Have you checked the Microsoft Store for an updated "app installer"?)
+
+echo 飽くまでも、私用に書いたものです。実行による影響などを理解した上で、自己責任でどうぞ。 &
+echo Microsoftストアにて "app installer" の更新を確認済みですか？ &
+echo (Have you checked the Microsoft Store for an updated "app installer"?) &
 
 
 
-echo インストールするパッケージの一覧
-echo (List of packages to install.)
-echo 私がwingetを使わなかった項目は、 ★ がついています。
-echo (Items for which I did not use winget are marked with ★.)
+echo インストールするパッケージの一覧 &
+echo (List of packages to install.) &
+echo 私がwingetを使わなかった項目は、 ★ がついています。 &
+echo (Items for which I did not use winget are marked with ★.) &
 
-echo Arduino IDE
-echo DevToys
-echo draw.io
-echo FireFox
-echo PowerToys
-echo Tor
-echo Ubuntu 22.04
-echo VMware WorkstationPlayer
-echo Windows Terminal
+echo Arduino IDE &
+echo DevToys &
+echo draw.io &
+echo FireFox &
+echo oh-my-posh &
+echo PowerToys &
+echo Tor &
+echo VMware WorkstationPlayer &
+echo Windows Terminal &
 
-echo Git
-echo Python 3.10
+echo Git &
+echo Python 3.10 &
 
-echo Audacity
-echo ★Discord
-echo Dynalist
-echo EarTrumpet
-echo MSEdgeRedirect
-echo OBS
-echo Thunderbird
-echo VLC
+echo Audacity &
+echo AutoHotKey &
+echo ★Discord &
+echo Dynalist &
+echo EarTrumpet &
+echo MSEdgeRedirect &
+echo OBS &
+echo Thunderbird &
+echo VLC &
 
 PAUSE
 
@@ -52,16 +55,16 @@ echo FireFox
 winget install -e --id Mozilla.Firefox
 echo .
 
+echo oh-my-posh &
+winget install -e --id XP8K0HKJFRXGCK
+echo .
+
 echo PowerToys
 winget install -e --id Microsoft.PowerToys
 echo .
 
 echo Tor
 winget install -e --id TorProject.TorBrowser
-echo .
-
-echo Ubuntu 22.04
-winget install -e --id Canonical.Ubuntu.2204
 echo .
 
 echo VMware WorkstationPlayer
@@ -86,6 +89,10 @@ echo .
 
 echo Audacity
 winget install -e --id Audacity.Audacity
+echo .
+
+echo AutoHotKey
+winget install -e --id Lexikos.AutoHotkey
 echo .
 
 echo ★Discord
@@ -118,6 +125,10 @@ echo.
 
 
 
-echo 以上で、 WingetList.bat の動作が完了しました。
-echo (WingetList.bat is done.)
+echo 以上で、 WingetList.bat の動作が完了しました。 &
+echo (WingetList.bat is done.) &
+
+echo Oh My Posh の設定は以下を参照してください。 &
+echo https://learn.microsoft.com/ja-jp/windows/terminal/tutorials/custom-prompt-setup &
+
 PAUSE

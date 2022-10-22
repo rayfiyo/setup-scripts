@@ -34,8 +34,12 @@ set tabstop=4                          " tabは半角4文字
 set shiftwidth=4                       " tabの幅
 
 
+
+
 " キーマップ
 nnoremap <Esc><Esc> :nohlsearch<CR>    " Escキー をタブルクリックで、ハイライト削除
+nnoremap <C-s> :w<CR>                  " Ctrl + S で書き込み
+inoremap <C-s> <ESC>:w<CR>             " Ctrl + S で書き込み
 
 
 
@@ -49,66 +53,57 @@ endif
 
 
 " open-browser.vim
-let g:netrw_nogx = 1 " disable netrw's gx mapping.
-nmap gx <Plug>(openbrowser-smart-search)
-vmap gx <Plug>(openbrowser-smart-search)
-
+"let g:netrw_nogx = 1 " disable netrw's gx mapping.
+nmap <C-j> <Plug>(openbrowser-smart-search)
+vmap <C-j> <Plug>(openbrowser-smart-search)
 
 
 " Previm
 autocmd BufRead,BufNewFile *.{text,txt,md} set filetype=markdown
-let g:previm_open_cmd = 'start FireFox'
-"let g:previm_open_cmd = 'C:\Users\yorugo\AppData\Local\Vivaldi\Application\vivaldi.exe'
 
 
 
 " dein.vim(プラグインマネージャ)
-" 引用元[https://knowledge.sakura.ad.jp/23248/]
-" dein.vim settings {{{
-" install dir {{{
-let s:dein_dir = expand('~/.cache/dein')
+" ユーザーディレクトリを $HOME に置換済み
+" 必要なら各自編集、追記
+" 参考: https://qiita.com/KowerKoint/items/89d1952b54dec57a1a07
+"deinの設定-----------------------
+let s:dein_dir = '$HOME/.cache/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
-" }}}
 
-" dein installation check {{{
 if &runtimepath !~# '/dein.vim'
-  if !isdirectory(s:dein_repo_dir)
-    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
-  endif
-  execute 'set runtimepath^=' . s:dein_repo_dir
+    if !isdirectory(s:dein_repo_dir)
+        execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
+    endif
+    execute 'set runtimepath^=' . s:dein_repo_dir
 endif
-" }}}
 
-" begin settings {{{
 if dein#load_state(s:dein_dir)
-  call dein#begin(s:dein_dir)
+    call dein#begin(s:dein_dir)
 
-  " .toml file
-  let s:rc_dir = expand('~/.vim')
-  if !isdirectory(s:rc_dir)
-    call mkdir(s:rc_dir, 'p')
-  endif
-  let s:toml = s:rc_dir . '/dein.toml'
+    let s:rc_dir = '$HOME/.vim'
+    if !isdirectory(s:rc_dir)
+        call mkdir(s:rc_dir, 'p')
+    endif
+    let s:toml = s:rc_dir . '/dein.toml'
+    let s:lazy_toml = s:rc_dir . '/dein_lazy.toml'
 
-  " read toml and cache
-  call dein#load_toml(s:toml, {'lazy': 0})
+    call dein#load_toml(s:toml, {'lazy': 0})
+    call dein#load_toml(s:lazy_toml, {'lazy' : 1})
 
-  " end settings
-  call dein#end()
-  call dein#save_state()
+    call dein#end()
+    call dein#save_state()
 endif
-" }}}
 
-" plugin installation check {{{
 if dein#check_install()
-  call dein#install()
+    call dein#install()
 endif
-" }}}
 
-" plugin remove check {{{
 let s:removed_plugins = dein#check_clean()
 if len(s:removed_plugins) > 0
-  call map(s:removed_plugins, "delete(v:val, 'rf')")
-  call dein#recache_runtimepath()
+    call map(s:removed_plugins, "delete(v:val, 'rf')")
+    call dein#recache_runtimepath()
 endif
-" }}}
+
+filetype plugin indent on
+syntax enable

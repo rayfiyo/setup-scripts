@@ -1,10 +1,10 @@
 chcp 65001
 echo off
 
+echo 飽くまでも、私用に書いたものです。実行による影響などを理解した上で、自己責任でどうぞ。 &
 
-
-echo このプログラムの仕事
-echo (Execution list of this program.)
+echo このプログラムの仕事 &
+echo (Execution list of this program.) &
 
 echo scoopのインストール &
 echo (Installing scoop.) &
