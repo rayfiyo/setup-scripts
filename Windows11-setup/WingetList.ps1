@@ -33,6 +33,7 @@ echo "Bitwarden"
 echo "★Discord"
 echo "Dynalist"
 echo "EarTrumpet"
+echo "IrfanView"
 echo "MSEdgeRedirect"
 echo "OBS"
 echo "Steam"
@@ -126,6 +127,9 @@ echo .
 echo "EarTrumpet"
 winget install -e --id File-New-Project.EarTrumpet
 echo .
+
+echo "IrfanView"
+winget install -e --id IrfanSkiljan.IrfanView
 
 echo "MSEdgeRedirect"
 winget install -e --id rcmaehl.MSEdgeRedirect
