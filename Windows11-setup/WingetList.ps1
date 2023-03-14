@@ -16,6 +16,7 @@ echo "DevToys"
 echo "draw.io"
 echo "FireFox"
 echo "Chrome"
+echo "Neovim"
 echo "oh-my-posh"
 echo "PowerShell 7"
 echo "PowerToys"
@@ -33,7 +34,6 @@ echo "Bitwarden"
 echo "★Discord"
 echo "Dynalist"
 echo "EarTrumpet"
-echo "IrfanView"
 echo "MSEdgeRedirect"
 echo "OBS"
 echo "Steam"
@@ -63,6 +63,10 @@ echo .
 echo "Chrome"
 winget install -e --id Google.Chrome
 echo .
+
+echo "Neovim"
+winget install -e --id Neovim.Neovim
+echo.
 
 echo "oh-my-posh"
 winget install -e --id XP8K0HKJFRXGCK
@@ -127,9 +131,6 @@ echo .
 echo "EarTrumpet"
 winget install -e --id File-New-Project.EarTrumpet
 echo .
-
-echo "IrfanView"
-winget install -e --id IrfanSkiljan.IrfanView
 
 echo "MSEdgeRedirect"
 winget install -e --id rcmaehl.MSEdgeRedirect

@@ -7,7 +7,13 @@ build_on = '''
 repo = 'junegunn/fzf.vim'
 
 [[plugins]]
+repo = 'Eandrju/cellular-automaton.nvim'
+
+[[plugins]]
 repo = 'mattn/vim-maketable'
+
+[[plugins]]
+repo = 'nvim-treesitter/nvim-treesitter'
 
 [[plugins]]
 repo = 'previm/previm'

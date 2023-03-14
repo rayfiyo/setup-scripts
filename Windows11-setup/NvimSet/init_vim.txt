@@ -1,3 +1,8 @@
+" Tabキーのインデントを4文字スペースに
+set expandtab                          " Tabキーをスペースに
+set tabstop=4                          " インデントの表示をスペース4文字に
+set shiftwidth=4                       " インデントの増減もスペース4文字に
+
 " encoding setting
 set encoding=utf-8                     " バッファ内で扱う文字コード
 set fileencoding=utf-8                 " 書き込み時UTF-8出力
@@ -35,7 +40,6 @@ set shiftwidth=4                       " tabの幅
 
 
 
-
 " キーマップ
 nnoremap <Esc><Esc> :nohlsearch<CR>    " Escキー をタブルクリックで、ハイライト削除
 nnoremap <C-s> :w<CR>                  " Ctrl + S で書き込み
@@ -45,7 +49,7 @@ inoremap <C-s> <ESC>:w<CR>             " Ctrl + S で書き込み
 
 " undoの永続化
 if has('persistent_undo')
-	let undo_path = expand('~/.vim/undo')
+	let undo_path = expand('C:/Users/yorugo/.vim/undo')
 	exe 'set undodir=' .. undo_path
 	set undofile
 endif
@@ -58,17 +62,39 @@ nmap <C-j> <Plug>(openbrowser-smart-search)
 vmap <C-j> <Plug>(openbrowser-smart-search)
 
 
+
 " Previm
 autocmd BufRead,BufNewFile *.{text,txt,md} set filetype=markdown
 
 
+" nvim-treesitter(シンタックスハイライト プラグイン)
+" https://zenn.dev/duglaser/articles/c02d6a937a48df
+function! CurrentLineInfo()
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  highlight = {
+    enable = true,
+    disable = {
+      'lua',
+      'toml',
+      'vue',
+    }
+  },
+  indent = {
+    enable = true,
+  },
+  ensure_installed = 'Go',
+  ensure_installed = 'python',
+}
+EOF
+endfunction
+
 
 " dein.vim(プラグインマネージャ)
-" ユーザーディレクトリを $HOME に置換済み
+" ユーザーディレクトリを C:/Users/yorugo に置換済み
 " 必要なら各自編集、追記
-" 参考: https://qiita.com/KowerKoint/items/89d1952b54dec57a1a07
 "deinの設定-----------------------
-let s:dein_dir = '$HOME/.cache/dein'
+let s:dein_dir = 'C:/Users/yorugo/.cache/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 if &runtimepath !~# '/dein.vim'
@@ -81,7 +107,7 @@ endif
 if dein#load_state(s:dein_dir)
     call dein#begin(s:dein_dir)
 
-    let s:rc_dir = '$HOME/.vim'
+    let s:rc_dir = 'C:/Users/yorugo/.vim'
     if !isdirectory(s:rc_dir)
         call mkdir(s:rc_dir, 'p')
     endif
