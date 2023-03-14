@@ -52,6 +52,10 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 fisher install jethrokuan/z
 
+echo "oh my posh の インストール"
+sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+sudo chmod +x /usr/local/bin/oh-my-posh
+
 echo "デフォルトのshellをfishに"
 cat /etc/shells | grep fish
 echo "↑この結果を踏まえて次のコマンドのPathを変更して実行"
@@ -59,3 +63,5 @@ echo "chsh -s /usr/bin/fish"
 
 echo "最終的な ppa の確認"
 sudo apt-add-repository --list
+
+echo "neovimのセットアップは別ファイル"
