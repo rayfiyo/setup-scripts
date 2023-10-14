@@ -1,6 +1,6 @@
 echo off
 
-echo "飽くまでも、私用に書いたものです。実行による影響などを理解した上で、自己責任でどうぞ。"
+echo "あくまでも、私用に書いたものです。実行による影響などを理解した上で、自己責任でどうぞ。"
 echo "Microsoftストアにて "app installer" の更新を確認済みですか？"
 echo "(Have you checked the Microsoft Store for an updated "app installer"?)"
 
@@ -16,6 +16,7 @@ echo "DevToys"
 echo "draw.io"
 echo "FireFox"
 echo "Chrome"
+echo "ImHex"
 echo "Neovim"
 echo "oh-my-posh"
 echo "PowerShell 7"
@@ -23,10 +24,11 @@ echo "PowerToys"
 echo "Tor"
 echo "VMware WorkstationPlayer"
 echo "Windows Terminal"
+echo "Wireshark"
 
 echo "Git"
 echo "GitLFS"
-echo "Python 3.10"
+echo "NodeJS"
 
 echo "Audacity"
 echo "AutoHotKey"
@@ -36,6 +38,8 @@ echo "Dynalist"
 echo "EarTrumpet"
 echo "MSEdgeRedirect"
 echo "OBS"
+echo "Obsidian"
+echo "EarTrumpet"
 echo "Steam"
 echo "Thunderbird"
 echo "VLC"
@@ -62,6 +66,10 @@ echo .
 
 echo "Chrome"
 winget install -e --id Google.Chrome
+echo .
+
+echo "ImHex"
+winget install -e --id WerWolv.ImHex
 echo .
 
 echo "Neovim"
@@ -92,6 +100,10 @@ echo "Windows Terminal"
 winget install -e --id Microsoft.WindowsTerminal
 echo .
 
+echo "Wireshark"
+winget install -e --id WiresharkFoundation.Wireshark
+echo .
+
 
 
 echo "Git"
@@ -102,8 +114,8 @@ echo "GitLFS"
 winget install -e --id GitHub.GitLFS
 echo .
 
-echo "Python 3.10"
-winget install -e --id Python.Python.3.10
+echo "NodeJS"
+winget install -e --id OpenJS.NodeJS
 echo .
 
 
@@ -138,6 +150,10 @@ echo .
 
 echo "OBS"
 winget install -e --id OBSProject.OBSStudio
+echo .
+
+echo "Obsidian"
+winget install -e --id Obsidian.Obsidian
 echo .
 
 echo "Steam"
