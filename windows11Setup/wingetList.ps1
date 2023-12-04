@@ -11,7 +11,6 @@ echo "(List of packages to install.)"
 echo "私がwingetを使わなかった項目は、 ★ がついています。"
 echo "(Items for which I did not use winget are marked with ★.)"
 
-echo "Arduino IDE"
 echo "DevToys"
 echo "draw.io"
 echo "FireFox"
@@ -21,7 +20,7 @@ echo "Neovim"
 echo "oh-my-posh"
 echo "PowerShell 7"
 echo "PowerToys"
-echo "Tor"
+echo "Rufus"
 echo "VMware WorkstationPlayer"
 echo "Windows Terminal"
 echo "Wireshark"
@@ -35,22 +34,15 @@ echo "AutoHotKey"
 echo "Bitwarden"
 echo "★Discord"
 echo "Dynalist"
-echo "EarTrumpet"
 echo "MSEdgeRedirect"
 echo "OBS"
-echo "Obsidian"
-echo "EarTrumpet"
+echo "Spotify"
 echo "Steam"
-echo "Thunderbird"
 echo "VLC"
 
 PAUSE
 
 
-
-echo "Arduino IDE"
-winget install -e --id ArduinoSA.IDE.rc
-echo .
 
 echo "DevToys"
 winget install -e --id 9PGCV4V3BK4W
@@ -88,8 +80,8 @@ echo "PowerToys"
 winget install -e --id Microsoft.PowerToys
 echo .
 
-echo "Tor"
-winget install -e --id TorProject.TorBrowser
+echo "Rufus"
+winget install -e --id Rufus.Rufus
 echo .
 
 echo "VMware WorkstationPlayer"
@@ -140,8 +132,8 @@ echo "Dynalist"
 winget install -e --id Dynalist.Dynalist
 echo .
 
-echo "EarTrumpet"
-winget install -e --id File-New-Project.EarTrumpet
+echo "Spotify"
+winget install -e --id Spotify.Spotify
 echo .
 
 echo "MSEdgeRedirect"
@@ -152,16 +144,8 @@ echo "OBS"
 winget install -e --id OBSProject.OBSStudio
 echo .
 
-echo "Obsidian"
-winget install -e --id Obsidian.Obsidian
-echo .
-
 echo "Steam"
 winget install -e --id Valve.Steam
-echo .
-
-echo "Thunderbird"
-winget install -e --id Mozilla.Thunderbird
 echo .
 
 echo "VLC"
