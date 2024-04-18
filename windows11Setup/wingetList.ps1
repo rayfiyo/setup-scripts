@@ -21,6 +21,7 @@ echo "oh-my-posh"
 echo "PowerShell 7"
 echo "PowerToys"
 echo "Rufus"
+echo "SumatraPDF"
 echo "VMware WorkstationPlayer"
 echo "Windows Terminal"
 echo "Wireshark"
@@ -82,6 +83,10 @@ echo .
 
 echo "Rufus"
 winget install -e --id Rufus.Rufus
+echo .
+
+echo "SumatraPDF"
+winget install -e --id SumatraPDF.SumatraPDF
 echo .
 
 echo "VMware WorkstationPlayer"
