@@ -35,6 +35,7 @@ echo "AutoHotKey"
 echo "Bitwarden"
 echo "★Discord"
 echo "Dynalist"
+echo "komorebi"
 echo "MSEdgeRedirect"
 echo "OBS"
 echo "Spotify"
@@ -135,6 +136,11 @@ echo .
 
 echo "Dynalist"
 winget install -e --id Dynalist.Dynalist
+echo .
+
+echo "komorebi"
+winget install -e --id LGUG2Z.komorebi
+winget install -e --id LGUG2Z.whkd
 echo .
 
 echo "Spotify"
