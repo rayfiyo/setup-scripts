@@ -15,6 +15,7 @@ echo "DevToys"
 echo "draw.io"
 echo "FireFox"
 echo "Chrome"
+echo "Go"
 echo "ImHex"
 echo "Neovim"
 echo "oh-my-posh"
@@ -60,6 +61,10 @@ echo .
 
 echo "Chrome"
 winget install -e --id Google.Chrome
+echo .
+
+echo "Go"
+winget install -e --id GoLang.Go
 echo .
 
 echo "ImHex"
