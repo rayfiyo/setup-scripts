@@ -36,6 +36,7 @@ echo "AutoHotKey"
 echo "Bitwarden"
 echo "★Discord"
 echo "Dynalist"
+echo "Figma"
 echo "komorebi"
 echo "MSEdgeRedirect"
 echo "OBS"
@@ -141,6 +142,10 @@ echo .
 
 echo "Dynalist"
 winget install -e --id Dynalist.Dynalist
+echo .
+
+echo "Figma"
+winget install -e --id Figma.Figma
 echo .
 
 echo "komorebi"
