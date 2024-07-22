@@ -19,6 +19,7 @@ echo "Go"
 echo "ImHex"
 echo "Neovim"
 echo "oh-my-posh"
+echo "OpenVPN"
 echo "PowerShell 7"
 echo "PowerToys"
 echo "Rufus"
@@ -78,6 +79,10 @@ echo.
 
 echo "oh-my-posh"
 winget install -e --id XP8K0HKJFRXGCK
+echo .
+
+echo "OpenVPN"
+winget install -e --id OpenVPNTechnologies.OpenVPN
 echo .
 
 echo "PowerShell 7"
