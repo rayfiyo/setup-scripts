@@ -13,11 +13,15 @@ echo "(Items for which I did not use winget are marked with ★.)"
 
 echo "DevToys"
 echo "draw.io"
+echo "Figma"
 echo "FireFox"
+echo "Fortinet"
 echo "Chrome"
+echo "Git"
 echo "Go"
 echo "ImHex"
 echo "Neovim"
+echo "NodeJS"
 echo "oh-my-posh"
 echo "OpenVPN"
 echo "PowerShell 7"
@@ -28,16 +32,12 @@ echo "VMware WorkstationPlayer"
 echo "Windows Terminal"
 echo "Wireshark"
 
-echo "Git"
-echo "GitLFS"
-echo "NodeJS"
 
 echo "Audacity"
 echo "AutoHotKey"
 echo "Bitwarden"
 echo "★Discord"
 echo "Dynalist"
-echo "Figma"
 echo "komorebi"
 echo "MSEdgeRedirect"
 echo "OBS"
@@ -57,12 +57,24 @@ echo "draw.io"
 winget install -e --id JGraph.Draw
 echo.
 
+echo "Figma"
+winget install -e --id Figma.Figma
+echo .
+
 echo "FireFox"
 winget install -e --id Mozilla.Firefox
 echo .
 
+echo "Fortinet"
+winget install -e --id Fortinet.FortiClientVPN
+echo .
+
 echo "Chrome"
 winget install -e --id Google.Chrome
+echo .
+
+echo "Git"
+winget install -e --id Git.Git
 echo .
 
 echo "Go"
@@ -76,6 +88,10 @@ echo .
 echo "Neovim"
 winget install -e --id Neovim.Neovim
 echo.
+
+echo "NodeJS"
+winget install -e --id OpenJS.NodeJS
+echo .
 
 echo "oh-my-posh"
 winget install -e --id XP8K0HKJFRXGCK
@@ -113,21 +129,7 @@ echo "Wireshark"
 winget install -e --id WiresharkFoundation.Wireshark
 echo .
 
-
-
-echo "Git"
-winget install -e --id Git.Git
-echo .
-
-echo "GitLFS"
-winget install -e --id GitHub.GitLFS
-echo .
-
-echo "NodeJS"
-winget install -e --id OpenJS.NodeJS
-echo .
-
-
+#
 
 echo "Audacity"
 winget install -e --id Audacity.Audacity
@@ -147,10 +149,6 @@ echo .
 
 echo "Dynalist"
 winget install -e --id Dynalist.Dynalist
-echo .
-
-echo "Figma"
-winget install -e --id Figma.Figma
 echo .
 
 echo "komorebi"
