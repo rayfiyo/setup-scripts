@@ -50,7 +50,7 @@ PAUSE
 
 
 echo "DevToys"
-winget install -e --id 9PGCV4V3BK4W
+winget install -e --id DevToys-app.DevToys
 echo .
 
 echo "draw.io"
@@ -94,7 +94,7 @@ winget install -e --id OpenJS.NodeJS
 echo .
 
 echo "oh-my-posh"
-winget install -e --id XP8K0HKJFRXGCK
+winget install -e --id JanDeDobbeleer.OhMyPosh
 echo .
 
 echo "OpenVPN"
@@ -136,7 +136,7 @@ winget install -e --id Audacity.Audacity
 echo .
 
 echo "AutoHotKey"
-winget install -e --id Lexikos.AutoHotkey
+winget install -e --id AutoHotkey.AutoHotkey
 echo .
 
 echo "Bitwarden"
