@@ -11,6 +11,7 @@ echo "(List of packages to install.)"
 echo "私がwingetを使わなかった項目は、 ★ がついています。"
 echo "(Items for which I did not use winget are marked with ★.)"
 
+echo "Canva"
 echo "DevToys"
 echo "draw.io"
 echo "Figma"
@@ -48,6 +49,10 @@ echo "VLC"
 PAUSE
 
 
+
+echo "Canva"
+winget install -e --id Canva.Canva
+echo .
 
 echo "DevToys"
 winget install -e --id DevToys-app.DevToys
