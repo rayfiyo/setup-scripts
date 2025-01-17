@@ -12,13 +12,13 @@ echo "私がwingetを使わなかった項目は、 ★ がついています。
 echo "(Items for which I did not use winget are marked with ★.)"
 
 echo "Canva"
+echo "Chrome"
+echo "DBeaver"
 echo "DevToys"
 echo "draw.io"
 echo "Figma"
 echo "FireFox"
 echo "Fortinet"
-echo "Chrome"
-echo "DBeaver"
 echo "Git"
 echo "Go"
 echo "ImHex"
@@ -55,6 +55,14 @@ echo "Canva"
 winget install -e --id Canva.Canva
 echo .
 
+echo "Chrome"
+winget install -e --id Google.Chrome
+echo .
+
+echo "DBeaver"
+winget install -e --id dbeaver.dbeaver
+ehco .
+
 echo "DevToys"
 winget install -e --id DevToys-app.DevToys
 echo .
@@ -74,14 +82,6 @@ echo .
 echo "Fortinet"
 winget install -e --id Fortinet.FortiClientVPN
 echo .
-
-echo "Chrome"
-winget install -e --id Google.Chrome
-echo .
-
-echo "DBeaver"
-winget install -e --id dbeaver.dbeaver
-ehco .
 
 echo "Git"
 winget install -e --id Git.Git
