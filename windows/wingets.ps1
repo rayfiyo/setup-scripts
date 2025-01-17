@@ -18,6 +18,7 @@ echo "Figma"
 echo "FireFox"
 echo "Fortinet"
 echo "Chrome"
+echo "DBeaver"
 echo "Git"
 echo "Go"
 echo "ImHex"
@@ -77,6 +78,10 @@ echo .
 echo "Chrome"
 winget install -e --id Google.Chrome
 echo .
+
+echo "DBeaver"
+winget install -e --id dbeaver.dbeaver
+ehco .
 
 echo "Git"
 winget install -e --id Git.Git
