@@ -1,15 +1,9 @@
 echo off
+echo 'Have you checked the Microsoft Store for "App Installer" updates?'
 
-echo "あくまでも、私用に書いたものです。実行による影響などを理解した上で、自己責任でどうぞ。"
-echo "Microsoftストアにて "app installer" の更新を確認済みですか？"
-echo "(Have you checked the Microsoft Store for an updated "app installer"?)"
+PAUSE
 
-
-
-echo "インストールするパッケージの一覧"
-echo "(List of packages to install.)"
-echo "私がwingetを使わなかった項目は、 ★ がついています。"
-echo "(Items for which I did not use winget are marked with ★.)"
+echo "List of packages to install."
 
 echo "Canva"
 echo "Chrome"
@@ -34,12 +28,11 @@ echo "VMware WorkstationPlayer"
 echo "Windows Terminal"
 echo "Wireshark"
 
-
 echo "Audacity"
 echo "AutoHotKey"
 echo "Bitwarden"
 echo "ChatGPT"
-echo "★Discord"
+echo "Discord"
 echo "Dynalist"
 echo "komorebi"
 echo "MSEdgeRedirect"
@@ -191,12 +184,7 @@ echo "VLC"
 winget install -e --id VideoLAN.VLC
 echo .
 
-
-
-echo "以上で、 WingetList.bat の動作が完了しました。"
-echo "(WingetList.bat is done.)"
-
-echo "Oh My Posh の設定は以下を参照してください。"
+echo "Setup of Oh My Posh:"
 echo "https://learn.microsoft.com/ja-jp/windows/terminal/tutorials/custom-prompt-setup"
 
 PAUSE
