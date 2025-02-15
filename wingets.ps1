@@ -148,7 +148,7 @@ winget install -e --id Bitwarden.Bitwarden
 echo .
 
 echo "ChatGPT"
-winget install -e --id 9NT1R1C2HH7J
+winget install -e --id lencx.ChatGPT
 echo .
 
 echo "★Discord"
