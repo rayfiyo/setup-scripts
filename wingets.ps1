@@ -31,7 +31,6 @@ echo "Wireshark"
 echo "Audacity"
 echo "AutoHotKey"
 echo "Bitwarden"
-echo "ChatGPT"
 echo "Discord"
 echo "Dynalist"
 echo "komorebi"
@@ -145,10 +144,6 @@ echo .
 
 echo "Bitwarden"
 winget install -e --id Bitwarden.Bitwarden
-echo .
-
-echo "ChatGPT"
-winget install -e --id lencx.ChatGPT
 echo .
 
 echo "★Discord"
