@@ -36,6 +36,7 @@ echo "Dynalist"
 echo "komorebi"
 echo "MSEdgeRedirect"
 echo "OBS"
+echo "Obsidian"
 echo "Spotify"
 echo "Steam"
 echo "VLC"
@@ -169,6 +170,10 @@ echo .
 
 echo "OBS"
 winget install -e --id OBSProject.OBSStudio
+echo .
+
+echo "Obsidian"
+winget install -e --id Obsidian.Obsidian
 echo .
 
 echo "Steam"
